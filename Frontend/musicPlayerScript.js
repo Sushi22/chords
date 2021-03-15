@@ -41,7 +41,8 @@ const pauseMusic = () => {
 	music.pause();
 	isPlaying = false;
 	if (!isPlaying)
-		play.classList.replace('fa-play', 'fa-pause');
+		play.classList.replace('fa-pause', 'fa-play');
+        play.title = "Play";
 	image.classList.remove("anime");
 }
 //For Playing
@@ -49,7 +50,8 @@ var playMusic = () => {
 	isPlaying = true;
 	music.play();
 	if (isPlaying)
-		play.classList.replace('fa-pause', 'fa-play');
+		play.classList.replace('fa-play', 'fa-pause');
+        play.title = "Pause";
 	image.classList.add("anime");
 }
 var songIndex = 0;
